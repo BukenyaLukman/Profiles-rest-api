@@ -1,0 +1,42 @@
+Basic Requirements
+Creating Profiles API
+
+1. Create new Profile
+	- Validate profile data
+2. List existing profiles
+	- Search for profiles
+3. View Specific profile
+4. Update my profile of logged in user
+	- Update name/email address
+	- Change password
+
+
+API URLS
+ - /api/profile/ - list all profiles
+ 	- GET (list profiles)
+ 	- POST (Create profiles)
+
+ - /api/profile/<profile_id>/ - manage specific profile
+ 	- GET (view specific profile)
+ 	- PUT / PATCH (update profile)
+ 	- DELETE (remove profile)
+
+Feed API 
+
+- Creating new Feed items
+	- Logged in user only
+- Updating feed item
+ 	- Logged in user only
+- Viewing other profile status updates
+	- All users
+
+API URLS
+
+	-/api/feed/ - list all feed items
+	- POST (create feed item for logged in user)
+- /api/feed/<feed_item_id>/ - manage specific feed item
+
+	- GET (get the feed item)
+	- PUT / PATCH (update feed item)
+	- DELETE (delete feed item)
+	
